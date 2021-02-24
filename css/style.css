@@ -40,6 +40,14 @@ header a {
   color: whitesmoke;
 }
 
+a:hover {
+  color: #ff8048;
+}
+
+a:active {
+  color: red;
+}
+
 header nav {
   max-width: 100%;
   text-align: center;
@@ -55,12 +63,18 @@ header li {
 button {
   color: whitesmoke;
   background: #8369d8;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 34px;
   border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background: aqua;
+  color: black;
 }
 
 input#search {
@@ -93,7 +107,7 @@ a {
 
 .section_1 h1 {
   font-family: "roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 0;
 }
 
@@ -105,6 +119,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 65px;
 }
 
 .wrapper_banner {
@@ -137,10 +152,20 @@ a {
 }
 
 .section_2 {
-  background-color: #8369d8;
+  /* background-color: #8369d8; */
+  background-image: url("/assets/pexels-mockupeditorcom-205316.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   text-align: center;
   padding-top: 300px;
   padding-bottom: 300px;
+  box-shadow: inset 0 0 0 2000px #e9e7efde;
+  background-attachment: fixed;
+}
+
+.section_2 p {
+  font-family: "roboto", sans-serif;
 }
 
 section.section_2 {
@@ -181,8 +206,8 @@ article img {
   padding-bottom: 300px;
 }
 
-.section_3 .article img {
-  width: auto;
+div#myData img {
+  width: 900px;
 }
 
 .section_3 .article {
@@ -245,8 +270,8 @@ article.article_compare {
 }
 
 .section_4 h2 {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 400px;
+  margin-right: 400px;
   margin-bottom: 200px;
 }
 .section_4 p {

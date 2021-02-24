@@ -20,13 +20,22 @@
 // document.querySelector(".test2").textContent = product2;
 
 // new code
-const url = "https://secondsemesterkea-5ba9.restdb.io/rest/monitors";
+const url =
+  "https://secondsemesterkea-5ba9.restdb.io/rest/monitors?q={%22modelName%22:%22Acer%20ProDesigner%20PE270K%22}";
+const mediaurl =
+  "https://secondsemesterkea-5ba9.restdb.io/media/6036d1fe61889c22000082e9?s=w";
 
 const options = {
   headers: {
     "x-apikey": "603578c85ad3610fb5bb6597",
   },
 };
+
+// const urlParams = new URLSearchParams(window.location.search);
+// const query = urlParams.get("id");
+
+// const id = query;
+// const url = "https://secondsemesterkea-5ba9.restdb.io/rest/monitors?q={"idNumber":1}";
 
 fetch(url, options)
   .then((response) => {
@@ -44,18 +53,29 @@ fetch(url, options)
     console.error("Error", e.message);
   });
 
-function showProduct(products) {
-  products.forEach((product) => {
-    console.log(product);
-    const template = document.querySelector("template").content;
-    const clone = template.cloneNode(true);
+// function showProduct(products) {
+//   products.forEach((product) => {
+//     // console.log(product);
+//     const template = document.querySelector("template").content;
+//     const clone = template.cloneNode(true);
 
-    clone.querySelector(".product_name").textContent = product.modelName;
+//     clone.querySelector("p").textContent = product.modelName;
 
-    const mainEl = document.querySelector("main");
-    mainEl.appendChild(clone);
-  });
+//     const mainEl = document.querySelector("main");
+//     mainEl.appendChild(clone);
+//   });
+// }
+
+function showProduct(data) {
+  var mainContainer = document.getElementById("myData");
+  for (var i = 0; i < data.length; i++) {
+    var div = document.createElement("img");
+    div.src = mediaurl;
+
+    mainContainer.appendChild(div);
+  }
 }
+
 // search json and filter
 
 // const search = document.getElementById("search");
