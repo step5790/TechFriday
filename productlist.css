@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  background-color: black;
+}
+body {
+  margin: 0 9.583vw 0 9.583vw;
+  font-family: "karla";
+  color: white;
+  font-size: 1.042vw;
+}
+
+/*This part will be probably edited and removed*/
+
+.breadCrumbs {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.521vw;
+  margin: 8vw 0;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  background-color: #6e70c9;
+  margin: 0 -9.583vw;
+  height: 8.75vw;
+  justify-content: center;
+}
+.productInfo {
+  display: flex;
+  align-items: center;
+  margin-top: -2vw;
+}
+
+.priceCta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPicture {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "roboto";
+}
+
+.cta {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.156vw solid white;
+  border-radius: 400px;
+  height: 2.855vw;
+  width: 9.257vw;
+}
+
+.filterButton:not(:last-child) {
+  margin-right: 4.479vw;
+}
+
+.circle {
+  margin-right: 0.8vw;
+  margin-left: 0.8vw;
+}
+
+.filterButton > h4 {
+  margin-right: 0.45vw;
+}
+
+article {
+  background: #2c2c2c;
+  padding: 0 1.823vw;
+}
+
+.productPrice {
+  color: #f4daab;
+  font-size: 1.823vw;
+}
+
+.currentCrumb {
+  color: #f4daab;
+}
+
+.firstCrumb {
+  text-decoration: underline;
+}
+
+h6,
+h4 {
+  font-size: 1.042vw;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.385vw;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.823vw;
+}
+
+.cta > p {
+  font-weight: 600;
+  margin-right: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.pageNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
