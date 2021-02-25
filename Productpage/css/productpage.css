@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+header {
+  display: inline-block;
+  top: 0;
+  background-color: #1e1e1c;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px #212121;
+}
+
+header img {
+  width: auto;
+  height: 80px;
+  float: left;
+  padding-top: 4px;
+  padding-left: 20px;
+}
+
+header a {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav {
+  max-width: 100%;
+  text-align: center;
+  padding: 5px;
+  display: inline;
+}
+
+header li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.breadCrumbs {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.productCrumb {
+  color: #f4daab;
+}
+
+.firstCrumb,
+.secondCrumb {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 16px;
+  color: white;
+}
+
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  max-width: 400px;
+}
+
+h1 {
+  color: #f4daab;
+  font-size: 40px;
+}
+
+.productImage {
+  width: 500px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.specs {
+  background-color: #6e70c9;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.box {
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.contact img {
+  margin-right: 10px;
+}
+
+.quickLinks li {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickLinks a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.aboutUs {
+  max-width: 300px;
+}
+
+h5 {
+  font-size: 25px;
+  color: #46c2ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .image img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .product {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .breadCrumbs {
+    margin-left: 40px;
+  }
+}
