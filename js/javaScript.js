@@ -20,10 +20,8 @@
 // document.querySelector(".test2").textContent = product2;
 
 // new code
-const url =
-  "https://secondsemesterkea-5ba9.restdb.io/rest/monitors?q={%22modelName%22:%22Acer%20ProDesigner%20PE270K%22}";
-const mediaurl =
-  "https://secondsemesterkea-5ba9.restdb.io/media/6036d1fe61889c22000082e9?s=w";
+const url = "https://secondsemesterkea-5ba9.restdb.io/rest/monitors";
+const mediaurl = "https://secondsemesterkea-5ba9.restdb.io/media/";
 
 const options = {
   headers: {
@@ -68,12 +66,36 @@ fetch(url, options)
 
 function showProduct(data) {
   var mainContainer = document.getElementById("myData");
-  for (var i = 0; i < data.length; i++) {
-    var div = document.createElement("img");
-    div.src = mediaurl;
+  console.log(data);
 
-    mainContainer.appendChild(div);
-  }
+  var div = document.createElement("img");
+  div.src = mediaurl + data[68].modelImage;
+
+  mainContainer.appendChild(div);
+
+  // compare data
+
+  var mainContainer = document.getElementById("compare_one");
+
+  var div = document.createElement("img");
+  div.src = mediaurl + data[3].modelImage;
+
+  var divs = document.createElement("p");
+  divs.innerHTML = data[3].modelName;
+
+  mainContainer.appendChild(div);
+  mainContainer.appendChild(divs);
+
+  var mainContainer = document.getElementById("compare_two");
+
+  var div = document.createElement("img");
+  div.src = mediaurl + data[4].modelImage;
+
+  var divs = document.createElement("p");
+  divs.innerHTML = data[4].modelName;
+
+  mainContainer.appendChild(div);
+  mainContainer.appendChild(divs);
 }
 
 // search json and filter

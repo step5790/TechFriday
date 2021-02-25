@@ -1,0 +1,1 @@
+https://secondsemesterkea-5ba9.restdb.io/rest/monitors?q={%22manufacturer%22:%20%22Philips%22}
